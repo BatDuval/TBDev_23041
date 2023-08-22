@@ -1,0 +1,18 @@
+body {
+    background: rgb(85,75,164);
+    background: linear-gradient(135deg, rgba(85,75,164,1) 9%, rgba(105,184,214,1) 64%, rgba(193,235,244,1) 100%);
+    text-align: center;
+}
+h1 {
+    color: red;
+}
+
+h2 {
+    color: blue;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
