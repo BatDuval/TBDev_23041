@@ -1,0 +1,15 @@
+body {
+    
+    background: rgb(255,190,225);
+    background: linear-gradient(135deg, rgba(255,190,225,1) 9%, rgba(199,232,245,1) 48%, rgba(193,235,244,1) 100%);
+}
+
+h1 {
+    color: red;
+    font-size: 150px;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
