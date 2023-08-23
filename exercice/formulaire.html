@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1>Page de Formulaires</h1>
+    <form action="destination.php" method="post" enctype="multipart/form-data">
+    <p>
+        * Ces zones sont obligatoires
+    </p>
+        <fieldset>
+        <legend>Coordonnées</legend>
+        <label for="nom">Nom*:</label>
+            <input type="text" name="nom" required><br>
+        <label for="prenom">Prénom*:</label> 
+            <input type="text" name="prenom" required><br><br>
+        <label for sexe>Sexe*
+            <input type="radio" name="sexe" value="Féminin"> Féminin
+            <input type="radio" name="sexe" value="Masculin"> Masculin
+        </label><br><br>
+        <label for="date">Date de naissance* :
+            <input type="date" name="ddn" id="date" required></label><br>
+        <label for="codepostal">Code Postal* :
+            <input type="number" name="codepostal" required>
+        </label><br>
+        <label for="adresse">Adresse :
+            <input type="text" name="adresse">
+        </label><br>
+        <label for="Ville">Ville :
+            <input type="text" name="Ville">
+        </label><br>
+        <label for="email">email*:</label> 
+            <input type="email" name="email" required placeholder="dave.loper@afpa.fr"><br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Votre Demande</legend>
+            <label for="Demande">Sujet* :
+                <select name="Demande">
+                    <option value="Sujet">Veuillez sélectionner un sujet</option>
+                    <option value="question">Question sur un produit</option>
+                    <option value="réclamation">Réclamation</option>
+                    <option value="autres">Autres</option>
+                </select>
+            </label><br>
+            <label for="com">Votre question* :</label>
+                <textarea name="com" rows="2" cols="15"></textarea>
+    </fieldset>
+    <br>
+    <label for="accept">
+        <input type="checkbox" name="accept" required>* J'accepte le traitement informatique de ce formulaire
+    </label><br><br>
+    <input type="submit" value="Envoyer">
+    <input type="submit" value="Annuler">
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <fieldset>
+        <legend>Checkbox</legend>
+    <label for="couleurCheckbox">Checkbox Multiples:
+     <input type="checkbox" name="color1" value="red" checked> Red
+     <input type="checkbox" name="color2" value="Yellow"> Yellow
+     <input type="checkbox" name="color3" value="Green" checked> Green
+    </label>
+    <br>
+    <label for="couleur">Checkbox Unique: (radio)
+        <input type="radio" name="couleur" value="Bleu"> Bleu 
+        <input type="radio" name="couleur" value="Rouge"> Rouge 
+        <input type="radio" name="couleur" value="Vert" checked> Vert
+    </label>
+    <br>
+    <label for="couleur">Checkbox Déroulante: 
+        <select name="couleur">
+            <option>Bleu</option>
+            <option>Rouge</option>
+        <option>Vert</option>
+        </select>
+    </label>
+    <br>
+    <label for="couleur">Choisissez votre couleur
+    <select id="couleur"> 
+        <option value="" selected>-</option>
+        <option value="Bleu">Bleu</option>
+        <option value="Rouge">Rouge</option>
+        <option value="Vert">Vert</option>
+    </select>
+    </label>
+    </fieldset>
+    <fieldset>
+        <legend>Fichier</legend>
+            <input type="file" name="fichier" multiple accept="image/png">
+    </fieldset>
+    <fieldset>
+        <legend>datalist</legend>
+        <label for="metier1">Sélectionnez votre métier:</label>
+        <input type="text" name="metier1" id="metier1" list="metier3">
+        <datalist id="metier3">
+            <option value="webmaster"></option>
+            <option value="développeur"></option>
+            <option value="administrateur B.D.D."></option>
+            <option value="webdesigner"></option>
+        </datalist>
+    </fieldset>
+    <br>
+    <input type="submit" value="Envoyer">
+    </form>
+    <br>
+    <a href="exercice.html" title="Page D'Accueil">Page D'Accueil</a>
+</body>
+</html>
