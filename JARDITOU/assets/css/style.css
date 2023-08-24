@@ -1,0 +1,40 @@
+
+.promo {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer, .lien {
+    background-color: black;
+    text-decoration: white;
+    padding: 25px;
+
+}
+
+a:visited {
+    color: white;
+}
+
+.parent {
+    width: 500px;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.box {
+    
+}
+
+#one {
+
+}
+
+#two {
+
+}
