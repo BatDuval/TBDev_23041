@@ -10,13 +10,15 @@
 
 <body>
     <header>
-        <img src="img/jarditou_logo.jpg" alt="logo" title="Logo Jarditou">
-        <p>La qualité depuis 70 ans</p>
-        <ul>
-            <li><a href="index.html" title="Accueil">Accueil</a></li>
-            <li><a href="tableau.html" title="Tableau">Tableau</a></li>
-            <li><a href="contact.html" title="contact">Contact</a></li>
-        </ul>
+        <div class="logo">
+            <div class="box" id="one"><img src="img/jarditou_logo.jpg" alt="logo" title="Logo Jarditou" class="jardi"></div>
+            <div class="box" id="two"><h1>Tout le jardin</h1></div>
+        </div>
+        <div class="lien">
+            <a href="index.html" title="Accueil">Accueil</a>
+            <a href="tableau.html" title="Tableau">Tableau</a>
+            <a href="contact.html" title="contact">Contact</a>
+        </div>
         <img class="promo" src="img/promotion.jpg" alt="promotion" title="Promotion">
     </header>
 
@@ -31,11 +33,12 @@
                 <label for="nom">Nom*:</label>
                     <input type="text" name="nom" required id="nom"><br>
                 <label for="prenom">Prénom*:</label> 
-                    <input type="text" name="prenom" required id="prenom"><br><br>
+                    <input type="text" name="prenom" required id="prenom">
+                <br >
+                
                 <label for=sexe>Sexe*</label>
                     <input type="radio" name="sexe" value="Féminin" id="sexe"> Féminin
                     <input type="radio" name="sexe" value="Masculin"> Masculin
-                
                 <br>
                 <br>
                 <label for="date">Date de naissance* :
@@ -77,11 +80,9 @@
         <hr>
         <br>
     <footer>
-        <ul>
-            <li><a href="MentionLegal.html" title="ML">Mentions légales</a></li>
-            <li><a href="Horaires.html" title="Horaires">Horaires</a></li>
-            <li><a href="PlanDuSite.html" title="Plan">Plan du site</a></li>
-        </ul>
+        <a href="MentionLegal.html" title="ML">Mentions légales</a>
+        <a href="Horaires.html" title="Horaires">Horaires</a>
+        <a href="PlanDuSite.html" title="Plan">Plan du site</a>
     </footer>
 </body>
 </html>

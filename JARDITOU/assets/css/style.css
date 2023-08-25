@@ -1,3 +1,16 @@
+body {
+    background: rgb(6,120,4);
+background: radial-gradient(circle, rgb(76, 138, 74) 0%, rgb(85, 69, 34) 86%);
+}
+
+p {
+    font-family: 'Fredoka', sans-serif;
+}
+
+h1 {
+    font-family: 'Kablammo', cursive;
+    font-size: 3em;
+}
 
 .promo {
     width: 100%;
@@ -19,22 +32,81 @@ a:visited {
     color: white;
 }
 
-.parent {
-    width: 500px;
-
+.logo {
     display: flex;
-    flex-wrap: nowrap;
-
 }
 
 .box {
-    
+    display: flex;
+    width: 50%;
+}
+
+.jardi {
+    width: 250px;
+    height: auto;
 }
 
 #one {
-
+    display: flex;
 }
 
 #two {
+    display: flex;
+}
 
+.Accueil {
+    display: flex;
+}
+
+.colonne {
+    display: flex;
+}
+
+#col1 {
+    display: flex;
+    width: 75%;
+}
+
+#col2 {
+    display: flex;
+    width: 25%;
+    font-family: 'Tilt Prism', cursive;
+    background: rgb(38,73,251);
+background: radial-gradient(circle, rgb(6, 37, 238) 25%, rgba(254,51,92,1) 100%);
+}
+
+.px {
+    width: 100%;
+}
+
+.jardin {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 768px)
+{
+    #col1 
+    {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    #col2 
+    {
+        display: none;
+    }
+    
+    html 
+    {
+        font-size: 75%;
+    }
+
+
+    footer, .lien 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
 }
