@@ -1,14 +1,21 @@
 body {
     background: rgb(6,120,4);
-background: radial-gradient(circle, rgb(76, 138, 74) 0%, rgb(85, 69, 34) 86%);
+    background: radial-gradient(circle, rgb(76, 138, 74) 0%, rgb(85, 69, 34) 86%);
+    margin: 25px;
 }
 
-p {
-    font-family: 'Fredoka', sans-serif;
+h2 {
+    font-family:  'Qwitcher Grypen';
+    font-size: 5em;
+}
+
+h3 {
+    font-family:  'Qwitcher Grypen';
+    font-size: 3em;
 }
 
 h1 {
-    font-family: 'Kablammo', cursive;
+    font-family: 'Kablammo';
     font-size: 3em;
 }
 
@@ -25,11 +32,15 @@ footer, .lien {
     background-color: black;
     text-decoration: white;
     padding: 25px;
-
+    display: flex;
+    justify-content: space-around;
 }
 
 a:visited {
     color: white;
+}
+fieldset{
+    width: 25%;
 }
 
 .logo {
@@ -56,6 +67,7 @@ a:visited {
 
 .Accueil {
     display: flex;
+    justify-content: space-between;
 }
 
 .colonne {
@@ -64,19 +76,25 @@ a:visited {
 
 #col1 {
     display: flex;
-    width: 75%;
 }
 
 #col2 {
     display: flex;
-    width: 25%;
-    font-family: 'Tilt Prism', cursive;
+    justify-content: center;
+    width: 33%;
+    font-family: 'Black Ops One', cursive;
+    font-weight: bolder;
     background: rgb(38,73,251);
-background: radial-gradient(circle, rgb(6, 37, 238) 25%, rgba(254,51,92,1) 100%);
+    background: radial-gradient(circle, rgb(6, 37, 238) 25%, rgba(254,51,92,1) 100%);
 }
 
 .px {
     width: 100%;
+    margin: 50px 0 50px 0;
+}
+
+#sexe{
+    margin: 20px 0 20px 0;
 }
 
 .jardin {

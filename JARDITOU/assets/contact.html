@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&family=Tilt+Prism&display=swap" rel="stylesheet">
     <title>Jarditou</title>
 </head>
 
@@ -23,7 +27,7 @@
     </header>
 
         <h2>Contact</h2>
-        <hr>
+        <hr class="px">
         <form action="destination.php" method="post" enctype="multipart/form-data">
             <p>
                 * Ces zones sont obligatoires
@@ -33,13 +37,10 @@
                 <label for="nom">Nom*:</label>
                     <input type="text" name="nom" required id="nom"><br>
                 <label for="prenom">Prénom*:</label> 
-                    <input type="text" name="prenom" required id="prenom">
-                <br >
-                
+                    <input type="text" name="prenom" required id="prenom"><br>
                 <label for=sexe>Sexe*</label>
                     <input type="radio" name="sexe" value="Féminin" id="sexe"> Féminin
                     <input type="radio" name="sexe" value="Masculin"> Masculin
-                <br>
                 <br>
                 <label for="date">Date de naissance* :
                     <input type="date" name="ddn" id="date" required></label><br>
@@ -73,12 +74,11 @@
             <br>
             <label for="accept">
                 <input type="checkbox" name="accept" required id="accept">* J'accepte le traitement informatique de ce formulaire
-            </label><br><br>
+            </label>
+            <br><br>
             <input type="submit" value="Envoyer">
             <input type="submit" value="Annuler">
-            <br>
-        <hr>
-        <br>
+        <hr class="px">
     <footer>
         <a href="MentionLegal.html" title="ML">Mentions légales</a>
         <a href="Horaires.html" title="Horaires">Horaires</a>
