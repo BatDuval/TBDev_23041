@@ -13,76 +13,97 @@
 </head>
 
 <body>
+    <!--    
+        Header
+    -->
     <header>
         <div class="logo">
             <div class="box" id="one"><img src="img/jarditou_logo.jpg" alt="logo" title="Logo Jarditou" class="jardi"></div>
-            <div class="box" id="two"><h1>Tout le jardin</h1></div>
+            <div class="box" id="two"><span>Tout le jardin</span></div>
         </div>
-        <div class="lien">
-            <a href="index.html" title="Accueil">Accueil</a>
-            <a href="tableau.html" title="Tableau">Tableau</a>
-            <a href="contact.html" title="contact">Contact</a>
-        </div>
-        <img class="promo" src="img/promotion.jpg" alt="promotion" title="Promotion">
     </header>
+
+    <!-- Nav -->
+    <nav class="lien">
+        <ul>
+            <li><a href="index.html" title="Accueil">Accueil</a></li>
+            <li><a href="tableau.html" title="Tableau">Tableau</a></li>
+            <li><a href="contact.html" title="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <img class="promo" src="img/promotion.jpg" alt="promotion" title="Promotion">
+    
 
         <h2>Contact</h2>
         <hr class="px">
-        <form action="destination.php" method="post" enctype="multipart/form-data">
+        <form action="http://bienvu.net/script.php" method="post" >
             <p>
                 * Ces zones sont obligatoires
             </p>
-                <fieldset>
+            <fieldset>
                 <legend>Coordonnées</legend>
                 <label for="nom">Nom*:</label>
                     <input type="text" name="nom" required id="nom"><br>
                 <label for="prenom">Prénom*:</label> 
                     <input type="text" name="prenom" required id="prenom"><br>
                 <label for=sexe>Sexe*</label>
-                    <input type="radio" name="sexe" value="Féminin" id="sexe"> Féminin
+                    <input type="radio" name="sexe" value="Féminin" required id="sexe"> Féminin
                     <input type="radio" name="sexe" value="Masculin"> Masculin
                 <br>
-                <label for="date">Date de naissance* :
-                    <input type="date" name="ddn" id="date" required></label><br>
-                <label for="codepostal">Code Postal* :</label>
-                    <input type="number" name="codepostal" required id="codepostal">
+                <label for="ddn">Date de naissance* :
+                    <input type="date" name="ddn" id="ddn" required></label><br>
+                <label for="cp">Code Postal* :</label>
+                    <input type="number" name="cp" required id="cp">
                 <br>
                 <label for="adresse">Adresse :</label>
                     <input type="text" name="adresse" id="adresse">
                 <br>
-                <label for="Ville">Ville :</label>
-                    <input type="text" name="Ville" id="Ville">
+                <label for="ville">Ville :</label>
+                    <input type="text" name="ville" id="ville">
                 <br>
                 <label for="email">email*:</label> 
                     <input type="email" name="email" required placeholder="dave.loper@afpa.fr" id="email"><br>
             </fieldset>
             <br>
             <fieldset>
+
                 <legend>Votre Demande</legend>
-                    <label for="Demande">Sujet* :
-                        <select name="Demande" id="Demande">
-                            <option value="Sujet">Veuillez sélectionner un sujet</option>
+                    <label for="demande">Sujet* :
+                        <select name="demande" required id="demande">
+                            <option value="" selected disabled>Veuillez sélectionner un sujet</option>
+                            <option value="commande">Mes commandes</option>
                             <option value="question">Question sur un produit</option>
-                            <option value="réclamation">Réclamation</option>
+                            <option value="reclamation">Réclamation</option>
                             <option value="autres">Autres</option>
                         </select>
-                    </label><br>
+                    </label>
+                    
+                    <br>
+
+                    <div class="qs">
                     <label for="com">Votre question* :</label>
-                        <textarea name="com" rows="2" cols="15" id="com"></textarea>
+                        <textarea name="com" rows="5" cols="35" id="com" required></textarea>
+                    </div>
+
             </fieldset>
-        </form>
+            
             <br>
             <label for="accept">
                 <input type="checkbox" name="accept" required id="accept">* J'accepte le traitement informatique de ce formulaire
             </label>
             <br><br>
             <input type="submit" value="Envoyer">
-            <input type="submit" value="Annuler">
+            <input type="reset" value="Annuler">
+        </form>
         <hr class="px">
+    <!-- Footer -->
     <footer>
-        <a href="MentionLegal.html" title="ML">Mentions légales</a>
-        <a href="Horaires.html" title="Horaires">Horaires</a>
-        <a href="PlanDuSite.html" title="Plan">Plan du site</a>
+        <ul>
+            <li><a href="MentionLegal.html" title="ML">Mentions légales</a></li>
+            <li><a href="Horaires.html" title="Horaires">Horaires</a></li>
+            <li><a href="PlanDuSite.html" title="Plan">Plan du site</a></li>
+        </ul>
     </footer>
 </body>
 </html>
